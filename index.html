@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Write this in later-->
+    </head>
+
+    <body>
+        <div class="header-container">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">This is a survey form built out of HTML and CSS</p>
+        </div>
+          
+        <div class="survey-container">
+            <form id="survey-form">
+                <div id="name-container" class="question-container">
+                    <label id="name-label">What is your name?</label><br>
+                    <input class="form-input" type="text" id="name"  placeholder="Enter full name here" required>
+                </div>
+              
+                <div id="email-container" class="question-container">
+                    <label id="email-label">What is your email?</label><br>
+                    <input class="form-input" type="email" id="email" placeholder="Enter your email here" required>
+                </div>
+              
+                <div id="ticket-number-container" class="question-container">
+                    <label id="number-label">How many season tickets do you want to buy?</label><br>
+                    <input class="form-input" type="number" id="number" min="1" max="8" placeholder="Enter number betwee 1 and 8">
+                </div>
+              
+                <div id="ticket-type-container" class="question-container">
+                    <label>What type of season ticket do you want?</label><br>
+                    <select id="dropdown">
+                        <option value="premium">Premium</option>
+                        <option value="general">General</option>
+                        <option value="supporter">Supporter</option>
+                    </select>
+                </div>
+              
+                <div id="gift-container" class="question-container">
+                    <label>What season membership gift would you prefer?</label><br>
+                    <input type="radio" value="scarf" name="gift"><label>Scarf</label>
+                    <input type="radio" value="hat" name="gift"><label>Hat</label>
+                </div>
+              
+                <div id="experiences-container" class="question-container">
+                    <label>What experiences are most important to you?</label><br>
+                    <input type="checkbox" name="experiences" value="food"><label>Food</label><br>
+                    <input type="checkbox" name="experiences" value="on-field"><label>On-Field Experiences</label><br>
+                    <input type="checkbox" name="experiences" value="entertainment"><label>Client Entertainment</label><br>
+                    <input type="checkbox" name="experiences" value="family"><label>Family Events</label><br>
+                </div>
+              
+                <div id="reason-container" class="question-container">
+                    <label>Why did you purchase season memberships?</label><br>
+                    <textarea id="ending-textarea"></textarea>
+                </div>
+              
+                <button type="submit" id="submit">Submit</button>
+              
+            </form>
+        </div>
+          
+        <div class="footer-container">
+            <footer>
+                <div class="author-container">
+                    <p id="authored">This page was made by Aaron McCollum on September 29, 2021</p>
+                </div>
+                <div class="social-container">
+                    <a href="https://www.linkedin.com/in/aaronmccollum/" target="_blank"><img src="https://i.imgur.com/EKH9WnF.png" alt="LinkedIn link" class="social-link"/></a>
+                    <a href="https://www.twitter.com/aaronmccollum_" target="_blank"><img src="https://i.imgur.com/KR9mlZz.png" alt="Twitter link" class="social-link"/></a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
